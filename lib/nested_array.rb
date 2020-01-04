@@ -25,14 +25,15 @@ def sorted_matrix
 end
 
 def matrix_lookup(matrix, row, column)
-  puts matrix[row][column]
+  lookup = matrix[row][column]
+  print lookup
 end
 
 def matrix_update(matrix, row, column, new_value)
-  result = matrix[row][column] = new_value
-  puts result
+  matrix[row][column] = new_value
 end
 
 matrix_lookup(assembled_matrix, 1, 1)
 matrix_update(assembled_matrix, 0, 2, "Lemons")
+# IRB is flagging errors but when it's run in Repl.it the results match what the lab is looking for - unsure why two different venues are returning different results on same code?
 
